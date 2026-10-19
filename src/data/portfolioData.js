@@ -35,7 +35,7 @@ export const personalInfo = {
   },
 
   // Path to your resume PDF in the public directory
-  resumeFile: "/AvirajLigade2026.pdf"
+  resumeFile: "/Aviraj2K26.pdf"
 };
 
 export const aboutMe = {
@@ -291,10 +291,10 @@ export const certificationsData = [
     description: "Comprehensive training on server-side scripting, relational database connectivity, and SQL query processing."
   },
   {
-    title: "Python Training",
-    issuer: "Spoken Tutorial (IIT Bombay Initiative)",
-    category: "Programming",
-    badge: "Core Python",
-    description: "Practical curriculum focused on Python syntax, data structures, modules, and algorithm execution."
+    title: "Oracle Cloud Infrastructure 2025",
+    issuer: "Oracle University (Aug 2025)",
+    category: " AI Foundations Associate",
+    badge: "Cloud Computing",
+    description: "Foundational training covering Oracle's cloud infrastructure, core services, compute, storage, and networking fundamentals."
   }
 ];

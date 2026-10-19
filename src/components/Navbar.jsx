@@ -9,6 +9,7 @@ import {
   FiCode 
 } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolioData';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -135,6 +136,9 @@ export default function Navbar() {
             </a>
           )}
 
+          {/* Theme Toggle Button */}
+          <ThemeToggle />
+
           {/* Mobile Menu Button */}
           <button
             type="button"
@@ -185,6 +189,11 @@ export default function Navbar() {
           </ul>
 
           <div className="mobile-nav-footer">
+            <div className="mobile-theme-row">
+              <span className="mobile-theme-label">Theme Mode</span>
+              <ThemeToggle variant="pill" />
+            </div>
+
             <a
               href={personalInfo.resumeFile}
               download={personalInfo.resumeFile.split('/').pop() || 'Aviraj-Ligade-Resume.pdf'}

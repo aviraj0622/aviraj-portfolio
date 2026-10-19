@@ -194,10 +194,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-lg);
   border-radius: 28px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .avatar-ring-glow {
@@ -253,15 +255,15 @@
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  background: rgba(13, 20, 36, 0.9);
+  background: var(--floating-badge-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-primary);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--floating-badge-shadow);
   white-space: nowrap;
   transition: all var(--transition-fast);
   z-index: 2;
@@ -337,8 +339,8 @@
 .placeholder-tooltip {
   margin-top: 12px;
   padding: 8px 12px;
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px dashed rgba(56, 189, 248, 0.35);
+  background: var(--card-sub-bg);
+  border: 1px dashed var(--border-glow);
   border-radius: var(--radius-md);
   font-size: 0.75rem;
   color: var(--text-secondary);
@@ -351,7 +353,7 @@
 .placeholder-tooltip code {
   color: var(--accent-cyan);
   font-family: var(--font-mono);
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--code-bg);
   padding: 2px 5px;
   border-radius: 4px;
 }
@@ -378,7 +380,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(30, 41, 59, 0.4);
+  background: var(--card-sub-bg);
   border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;

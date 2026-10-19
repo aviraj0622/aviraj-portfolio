@@ -70,7 +70,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   padding: 20px;
-  background: rgba(10, 16, 30, 0.6);
+  background: var(--card-sub-bg);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
 }
@@ -166,7 +166,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: rgba(15, 23, 42, 0.5);
+  background: var(--card-sub-bg);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   transition: all var(--transition-normal);
@@ -174,8 +174,8 @@
 
 .strength-card:hover {
   transform: translateX(6px);
-  border-color: rgba(99, 102, 241, 0.35);
-  background: rgba(22, 33, 62, 0.7);
+  border-color: var(--border-accent);
+  background: var(--card-sub-hover-bg);
 }
 
 .strength-header {
@@ -188,7 +188,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(30, 41, 59, 0.7);
+  background: var(--icon-box-bg);
   display: flex;
   align-items: center;
   justify-content: center;

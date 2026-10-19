@@ -31,6 +31,22 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Aviraj Anil Ligade | Software Developer Portfolio" />
     <meta property="twitter:description" content="B.Tech Computer Science & Engineering Graduate (2026). Building scalable web, mobile, and backend applications." />
+
+    <!-- Theme Initialization Script (prevents theme flash on reload) -->
+    <script>
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem('portfolio_theme');
+          const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', initialTheme);
+          const metaTheme = document.querySelector('meta[name="theme-color"]');
+          if (metaTheme) {
+            metaTheme.setAttribute('content', initialTheme === 'dark' ? '#070a13' : '#f8fafc');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

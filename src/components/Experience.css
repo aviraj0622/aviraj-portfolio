@@ -33,7 +33,7 @@
   height: 18px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  border: 4px solid #070a13;
+  border: 4px solid var(--bg-primary);
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
   margin-top: 24px;
   z-index: 2;
@@ -129,7 +129,7 @@
 }
 
 .exp-highlights-box {
-  background: rgba(10, 16, 30, 0.6);
+  background: var(--card-sub-bg);
   padding: 20px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);

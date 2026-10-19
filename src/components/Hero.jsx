@@ -82,7 +82,7 @@ export default function Hero() {
 
             <a
               href={personalInfo.resumeFile}
-              download={personalInfo.resumeFile.split('/').pop() || 'Aviraj-Ligade-Resume.pdf'}
+              download={personalInfo.resumeFile.split('/').pop() || 'Aviraj2K26.pdf'}
               className="btn btn-outline hero-btn"
               title="Download PDF Resume"
             >

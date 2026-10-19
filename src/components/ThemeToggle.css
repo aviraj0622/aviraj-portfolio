@@ -1,0 +1,149 @@
+/* ==========================================================================
+   THEME TOGGLE COMPONENT STYLES
+   ========================================================================== */
+
+/* Icon Button Variant */
+.theme-toggle-btn {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--icon-btn-bg);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--icon-btn-hover-bg);
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.2);
+}
+
+.theme-toggle-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.theme-icon-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.3s ease,
+              color 0.3s ease;
+}
+
+/* Dark mode active: show moon, hide sun */
+.theme-toggle-btn.is-dark .moon-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: #c084fc;
+}
+
+.theme-toggle-btn.is-dark .sun-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.4);
+  color: #fbbf24;
+}
+
+/* Light mode active: show sun, hide moon */
+.theme-toggle-btn.is-light .sun-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: #ea580c;
+}
+
+.theme-toggle-btn.is-light .moon-icon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.4);
+  color: #6366f1;
+}
+
+.theme-toggle-btn.is-light:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+}
+
+/* Pill Switch Variant (for Mobile Drawer / Settings) */
+.theme-toggle-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px;
+  background: var(--card-sub-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.pill-option {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.pill-icon {
+  font-size: 1rem;
+}
+
+.pill-slider {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: calc(50% - 4px);
+  border-radius: var(--radius-full);
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+/* Pill Active States */
+.theme-toggle-pill.dark .pill-slider {
+  left: 4px;
+  transform: translateX(0);
+}
+
+.theme-toggle-pill.dark .pill-dark {
+  color: var(--text-primary);
+}
+
+.theme-toggle-pill.light .pill-slider {
+  left: 4px;
+  transform: translateX(100%);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.15);
+}
+
+.theme-toggle-pill.light .pill-light {
+  color: #ea580c;
+}

@@ -24,7 +24,7 @@
 
 .highlighted-degree-card {
   border: 1px solid rgba(56, 189, 248, 0.4);
-  background: linear-gradient(180deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.85) 100%);
+  background: var(--edu-highlight-bg);
   box-shadow: 0 12px 35px rgba(56, 189, 248, 0.15);
   transform: translateY(-4px);
 }
@@ -91,7 +91,7 @@
 }
 
 .edu-score-box {
-  background: rgba(10, 16, 30, 0.6);
+  background: var(--card-sub-bg);
   padding: 12px 16px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);

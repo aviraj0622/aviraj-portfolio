@@ -3,9 +3,10 @@
    ========================================================================== */
 
 .portfolio-footer {
-  background: #04060c;
+  background: var(--bg-footer);
   border-top: 1px solid var(--border-subtle);
   position: relative;
+  transition: background-color var(--transition-normal);
   z-index: 10;
 }
 
@@ -78,9 +79,9 @@
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: rgba(30, 41, 59, 0.6);
+  background: var(--icon-btn-bg);
   border: 1px solid var(--border-subtle);
-  color: var(--text-light);
+  color: var(--text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,7 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: rgba(30, 41, 59, 0.5);
+  background: var(--icon-btn-bg);
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   display: flex;
@@ -141,9 +142,9 @@
 }
 
 .footer-icon-link:hover {
-  color: #ffffff;
+  color: var(--text-primary);
   border-color: var(--accent-cyan);
-  background: rgba(56, 189, 248, 0.15);
+  background: var(--icon-btn-hover-bg);
 }
 
 @media (max-width: 768px) {
