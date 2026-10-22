@@ -107,8 +107,8 @@ Open `src/data/portfolioData.js` to update:
    - Save your photo (e.g. `profile.jpg`) inside the `public/` directory or `src/assets/`.
    - In `portfolioData.js`, set `profileImage: "/profile.jpg"`.
 5. **Resume PDF**:
-   - The button downloads `/AvirajLigade2026.pdf`.
-   - Update `public/AvirajLigade2026.pdf` with your updated resume PDF whenever you want.
+   - The button downloads `/Aviraj2026.pdf`.
+   - Update `public/Aviraj2026.pdf` with your updated resume PDF whenever you want.
 
 ---
 

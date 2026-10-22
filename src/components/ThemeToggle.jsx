@@ -3,7 +3,7 @@ import { useTheme } from '../context/ThemeContext';
 import './ThemeToggle.css';
 
 export default function ThemeToggle({ variant = 'icon', className = '' }) {
-  const { theme, isDark, toggleTheme } = useTheme();
+  const { isDark, toggleTheme } = useTheme();
 
   if (variant === 'pill') {
     return (

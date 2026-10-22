@@ -12,7 +12,7 @@ export const personalInfo = {
   role: "B.Tech Computer Science & Engineering Graduate | 2026",
   tagline: "Building scalable web & mobile solutions with Java, React.js, and modern backend architectures.",
   location: "Medshingi, Sangola, Maharashtra, India",
-  email: "avirajligade0622@gmail.com",
+  email: "ligadeaviraj@gmail.com",
   phone: "+91 9075694640",
   phoneDisplay: "+91 90756 94640",
   graduationYear: "2026",
@@ -30,12 +30,12 @@ export const personalInfo = {
     github: "https://github.com/aviraj0622",
     // [PLACEHOLDER - UPDATE WITH YOUR LINKEDIN PROFILE URL]
     linkedin: "https://www.linkedin.com/in/aviraj-ligade-033476280/",
-    email: "mailto:avirajligade0622@gmail.com",
+    email: "mailto:ligadeaviraj@gmail.com",
     phone: "tel:+919075694640"
   },
 
   // Path to your resume PDF in the public directory
-  resumeFile: "/Aviraj2K26.pdf"
+  resumeFile: "/Aviraj2026.pdf"
 };
 
 export const aboutMe = {
